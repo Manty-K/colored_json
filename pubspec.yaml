@@ -1,7 +1,7 @@
 name: preety_json
 description: Visual Json response in preety format.
 version: 0.0.1
-#homepage:
+homepage: https://github.com/Manty-K/preety_json
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
