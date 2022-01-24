@@ -1,6 +1,6 @@
 name: preety_json
-description: Visual Json response in preety format.
-version: 0.0.1
+description: Visualize JSON response in preety format.
+version: 1.0.0
 homepage: https://github.com/Manty-K/preety_json
 
 environment:
