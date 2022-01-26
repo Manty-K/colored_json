@@ -1,8 +1,8 @@
-# Pretty JSON
-Converts JSON data into a pretty *customizable* widget.
+# Colored JSON
+Converts JSON data into *customizable* widget.
 
 ## Getting Started
- `PrettyJson` is a stateless widget that produces a structured view of JSON string provided. It can be used like any other flutter widget.
+ `ColoredJson` is a stateless widget that produces a structured view of JSON string provided. It can be used like any other flutter widget.
 It's fully customizable where you can set different colors to different datatypes including colon, comma and brackets. Set indent length. Use text style of your choice. You can also change the background color.
 
 ||||
@@ -16,28 +16,28 @@ It's fully customizable where you can set different colors to different datatype
 
 ```yaml
 dependencies:
-  pretty_json: 1.0.0
+  colored_json: 1.0.0
 ```
 
  - Import  the package in a dart file
 
 ```dart
-import 'package:pretty_json/pretty_json.dart';
+import 'package:colored_json/colored_json.dart';
 ```
 
- - Pass a JSON string to the `data` parameter on `PrettyJson` Widget
+ - Pass a JSON string to the `data` parameter on `ColoredJson` Widget
 
 ### Simple Usage
 ```dart
 const String responseBody = '''
 {
   'id':1,
-  'name':'Pretty Json',
+  'name':'Colored Json',
   'isFlutterAwesome':true,
 }
 ''';
 
-PrettyJson(
+ColoredJson(
 	data: responseBody,
 )
 
@@ -56,7 +56,7 @@ final dartMap = {
   "isFlutterCool": true,
 };
 
-PrettyJson(
+ColoredJson(
 	data: jsonEncode(dartMap),
 	indentLength: 5,
 	keyColor: Colors.green,

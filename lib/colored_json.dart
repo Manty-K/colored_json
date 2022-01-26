@@ -11,8 +11,8 @@ late Color _globalKeyColor;
 
 late Color _globalColonColor;
 
-class PrettyJson extends StatelessWidget {
-  PrettyJson({
+class ColoredJson extends StatelessWidget {
+  ColoredJson({
     Key? key,
     required this.data,
     this.backgroundColor = Colors.transparent,
@@ -82,7 +82,7 @@ class PrettyJson extends StatelessWidget {
     return Material(
       color: backgroundColor,
       textStyle: textStyle,
-      child: _prettyView(
+      child: _coloredView(
         jsonString: data,
         indent: 0,
       ),
@@ -90,7 +90,7 @@ class PrettyJson extends StatelessWidget {
   }
 
   /// Takes JSON string and initial indent
-  Widget _prettyView({
+  Widget _coloredView({
     required String jsonString,
     required int indent,
   }) {

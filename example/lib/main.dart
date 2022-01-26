@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:pretty_json/pretty_json.dart';
+import 'package:colored_json/colored_json.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,12 +28,12 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Pretty Json Example',
+            'Colored Json Example',
           ),
         ),
         body: Column(
           children: [
-            PrettyJson(
+            ColoredJson(
               data: jsonEncode(dartMap),
               indentLength: 5,
               keyColor: Colors.green,
