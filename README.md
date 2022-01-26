@@ -7,7 +7,7 @@ It's fully customizable where you can set different colors to different datatype
 
 ||||
 |--|--|--|
-| <img src="https://i.ibb.co/Kbj27Nn/default.jpg" alt="Default View"/> | <img src="https://i.ibb.co/R3ChRyz/customized.jpg" alt="Customized View 1" >|<img src="https://i.ibb.co/Zhv9bxH/flexible.jpg" alt="Customized View 2" />|
+| <img src="https://i.ibb.co/5hPyLt4/default.jpg" alt="Default View"/> | <img src="https://i.ibb.co/3vnm3xr/customized.jpg" alt="Customized View 1" >|<img src="https://i.ibb.co/rk10303/flexible.jpg" alt="Customized View 2" />|
 
 
 
