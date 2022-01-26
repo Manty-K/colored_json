@@ -89,6 +89,7 @@ class PrettyJson extends StatelessWidget {
     );
   }
 
+  /// Takes JSON string and initial indent
   Widget _prettyView({
     required String jsonString,
     required int indent,
@@ -111,6 +112,7 @@ class PrettyJson extends StatelessWidget {
     }
   }
 
+  /// Creates a Map View
   Widget _parseMap({
     required Map data,
     required int indent,
@@ -234,6 +236,7 @@ class PrettyJson extends StatelessWidget {
     }
   }
 
+  /// Creates a List View
   Widget _parseList({
     required List<dynamic> data,
     required int indent,
@@ -374,6 +377,7 @@ class _KeyValueWidget extends StatelessWidget {
   }
 }
 
+/// Required to create indents
 String _spaces(int multiple) {
   return ' ' * _globalTabLength * multiple;
 }
