@@ -1,4 +1,4 @@
-library preety_json;
+library pretty_json;
 
 import 'package:flutter/material.dart';
 import 'dart:convert';
@@ -11,8 +11,8 @@ late Color _globalKeyColor;
 
 late Color _globalColonColor;
 
-class PreetyJson extends StatelessWidget {
-  PreetyJson({
+class PrettyJson extends StatelessWidget {
+  PrettyJson({
     Key? key,
     required this.data,
     this.backgroundColor = Colors.transparent,
@@ -36,7 +36,7 @@ class PreetyJson extends StatelessWidget {
   }
 
   /// Json String
-  final dynamic data;
+  final String data;
 
   /// Background color of the Widget
   final Color backgroundColor;
@@ -82,15 +82,15 @@ class PreetyJson extends StatelessWidget {
     return Material(
       color: backgroundColor,
       textStyle: textStyle,
-      child: _preetyView(
+      child: _prettyView(
         jsonString: data,
         indent: 0,
       ),
     );
   }
 
-  Widget _preetyView({
-    required dynamic jsonString,
+  Widget _prettyView({
+    required String jsonString,
     required int indent,
   }) {
     final decodedData = jsonDecode(jsonString);
