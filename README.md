@@ -37,7 +37,7 @@ const String responseBody = '''
 }
 ''';
 
-PreetyJson(
+PrettyJson(
 	data: responseBody,
 )
 
