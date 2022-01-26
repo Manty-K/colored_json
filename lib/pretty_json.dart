@@ -24,12 +24,12 @@ class PrettyJson extends StatelessWidget {
     this.curlyBracketColor = Colors.black,
     this.squareBracketColor = Colors.black,
     this.textStyle = const TextStyle(),
-    this.talL = 4,
+    this.indentLength = 4,
     this.keyColor = Colors.blue,
     this.commaColor = Colors.black,
     this.colonColor = Colors.deepPurple,
   }) : super(key: key) {
-    _globalTabLength = talL;
+    _globalTabLength = indentLength;
     _globalCommaColor = commaColor;
     _globalColonColor = colonColor;
     _globalKeyColor = keyColor;
@@ -65,8 +65,8 @@ class PrettyJson extends StatelessWidget {
   /// Textstyle of parsed json data
   final TextStyle textStyle;
 
-  /// Tab length in spaces, default to 4
-  final int talL;
+  /// Indent length in spaces, default to 4
+  final int indentLength;
 
   /// Color of Json Color Key
   final Color keyColor;
