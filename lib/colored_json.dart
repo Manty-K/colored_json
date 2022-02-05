@@ -1,4 +1,4 @@
-library pretty_json;
+library colored_json;
 
 import 'package:flutter/material.dart';
 import 'dart:convert';
@@ -35,7 +35,7 @@ class ColoredJson extends StatelessWidget {
     _globalKeyColor = keyColor;
   }
 
-  /// Json String
+  /// JSON String
   final String data;
 
   /// Background color of the Widget
@@ -59,7 +59,7 @@ class ColoredJson extends StatelessWidget {
   /// Color of Curly brackets
   final Color curlyBracketColor;
 
-  /// Color of Curly brackets
+  /// Color of Square brackets
   final Color squareBracketColor;
 
   /// Textstyle of parsed json data
@@ -68,13 +68,13 @@ class ColoredJson extends StatelessWidget {
   /// Indent length in spaces, default to 4
   final int indentLength;
 
-  /// Color of Json Color Key
+  /// Color of JSON Color Key
   final Color keyColor;
 
   /// Color of comma
   final Color commaColor;
 
-  /// Color of color
+  /// Color of colon
   final Color colonColor;
 
   @override
@@ -362,18 +362,27 @@ class _KeyValueWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text.rich(TextSpan(
+    return Row(
       children: [
-        TextSpan(text: _spaces(indent)),
-        if (jsonKey != null)
-          TextSpan(text: '"$jsonKey"', style: TextStyle(color: keyColor)),
-        if (jsonKey != null)
-          TextSpan(text: ' : ', style: TextStyle(color: _globalColonColor)),
-        TextSpan(text: jsonValue, style: TextStyle(color: valueColor)),
-        if (showComma)
-          TextSpan(text: ',', style: TextStyle(color: _globalCommaColor)),
+        SizedBox(
+          child: Text(_spaces(indent)),
+        ),
+        Flexible(
+          child: Text.rich(TextSpan(
+            children: [
+              if (jsonKey != null)
+                TextSpan(text: '"$jsonKey"', style: TextStyle(color: keyColor)),
+              if (jsonKey != null)
+                TextSpan(
+                    text: ' : ', style: TextStyle(color: _globalColonColor)),
+              TextSpan(text: jsonValue, style: TextStyle(color: valueColor)),
+              if (showComma)
+                TextSpan(text: ',', style: TextStyle(color: _globalCommaColor)),
+            ],
+          )),
+        ),
       ],
-    ));
+    );
   }
 }
 
