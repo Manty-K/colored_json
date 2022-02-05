@@ -363,6 +363,7 @@ class _KeyValueWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         SizedBox(
           child: Text(_spaces(indent)),
