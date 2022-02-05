@@ -1,6 +1,6 @@
 name: colored_json
-description: Visualize JSON response in colored format.
-version: 1.0.0
+description: A package that converts JSON string into a customizable flutter widget.
+version: 1.1.0
 homepage: https://github.com/Manty-K/colored_json
 
 environment:
