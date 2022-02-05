@@ -85,7 +85,8 @@ ColoredJson(
 
 
 
-## Upcoming features
+## Upcoming Tasks
 
- - Shrink code within the specific scope on click.
- - Inner Spacing parameter 
+ - Code shrink feature
+ - Add Inner Spacing parameter
+ - Add tests
