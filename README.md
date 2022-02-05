@@ -1,5 +1,5 @@
 # Colored JSON
-Converts JSON data into *customizable* widget.
+Convert JSON string into *customizable* widget.
 
 ## Getting Started
  `ColoredJson` is a stateless widget that produces a structured view of JSON string provided. It can be used like any other flutter widget.
@@ -10,30 +10,17 @@ It's fully customizable where you can set different colors to different datatype
 | <img src="https://i.ibb.co/5hPyLt4/default.jpg" alt="Default View"/> | <img src="https://i.ibb.co/3vnm3xr/customized.jpg" alt="Customized View 1" >|<img src="https://i.ibb.co/rk10303/flexible.jpg" alt="Customized View 2" />|
 
 
-
 ## Usage
- - Add library to your *pubspec.yaml* file
 
-```yaml
-dependencies:
-  colored_json: 1.0.0
-```
-
- - Import  the package in a dart file
-
-```dart
-import 'package:colored_json/colored_json.dart';
-```
-
- - Pass a JSON string to the `data` parameter on `ColoredJson` Widget
+ - Pass a JSON string to the `data` parameter of `ColoredJson` Widget
 
 ### Simple Usage
 ```dart
 const String responseBody = '''
 {
-  'id':1,
-  'name':'Colored Json',
-  'isFlutterAwesome':true,
+  'id' : 1,
+  'name' : 'Colored Json',
+  'isFlutterAwesome' : true,
 }
 ''';
 
@@ -71,9 +58,10 @@ ColoredJson(
 	colonColor: Colors.purple,
 	intColor: Colors.lime,
 	textStyle: const TextStyle(
-	fontSize: 20,
-	letterSpacing: 2,
-	),
+		fontSize: 20,
+		letterSpacing: 2,
+		),	
+	)
    ```
 
   
