@@ -19,9 +19,9 @@ dev_dependencies:
 screenshots:
   - description: Default View
     path: screenshots/01-screenshot.jpeg
-  - description: Custimised View
+  - description: Custimised View 1
     path: screenshots/02-screenshot.jpeg
-  - description: Colored JSON Widget 3
+  - description: Custimised View 2
     path: screenshots/03-screenshot.jpeg
 
 flutter:
