@@ -1,3 +1,7 @@
+# 1.1.2
+
+- Minor typo fixes
+
 # 1.1.1
 
 - Screenshots added
