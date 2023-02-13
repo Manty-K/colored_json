@@ -15,4 +15,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+
+screenshots:
+  - description: Default View
+    path: screenshots/01-screenshot.jpeg
+  - description: Custimised View
+    path: screenshots/02-screenshot.jpeg
+  - description: Colored JSON Widget 3
+    path: screenshots/03-screenshot.jpeg
+
 flutter:
