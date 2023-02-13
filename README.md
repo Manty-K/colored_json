@@ -8,7 +8,7 @@ Convert JSON string into _customizable_ widget.
 It's fully customizable where you can set different colors to different datatypes including colon, comma and brackets. Set indent length. Use text style of your choice. You can also change the background color.
 |Defaut View|Customised View 1|Customised View 2|
 |--|--|--|
-|![Default View](screenshots/01-screenshot.jpeg)|![Customised View 1](screenshots/02-screenshot.jpeg)|![Customised View 2](screenshots/03-screenshot.jpeg)
+| <img src="https://i.ibb.co/5hPyLt4/default.jpg" alt="Default View"/> | <img src="https://i.ibb.co/3vnm3xr/customized.jpg" alt="Customized View 1" >|<img src="https://i.ibb.co/rk10303/flexible.jpg" alt="Customized View 2" />|
 
 ## Usage
 
