@@ -1,8 +1,12 @@
-## 1.1.0
+# 1.1.1
 
-* Indent issue fix on new line
-* Typo fixes
+- Screenshots added
 
-## 1.0.0
+# 1.1.0
 
-* Initial Release
+- Indent issue fix on new line
+- Typo fixes
+
+# 1.0.0
+
+- Initial Release
